@@ -27,7 +27,8 @@ public class AddChatData : MonoBehaviour
             var chatData = new ChatData
             {
                 Name = _profileNameBox.text,
-                MessageBody = _textBox.text
+                MessageBody = _textBox.text,
+                TimeSent = Timestamp.GetCurrentTimestamp()
             };
 
             var db = FirebaseFirestore.DefaultInstance;

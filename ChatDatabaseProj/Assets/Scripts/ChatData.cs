@@ -12,4 +12,8 @@ public struct ChatData
 
     [FirestoreProperty]
     public string MessageBody { get; set; }
+
+
+    [FirestoreProperty]
+    public Timestamp TimeSent { get; set; }
 }
